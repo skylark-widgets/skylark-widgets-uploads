@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["define","filer"],"mappings":";;;;;;;AAAAA,QACC,UACA,cACC,SAASC,GACV,OAAOA","file":"../main.js","sourcesContent":["define([\r\n\t\"./filer\",\r\n\t\"./Uploader\"\r\n],function(filer){\r\n\treturn filer;\r\n})"]}
