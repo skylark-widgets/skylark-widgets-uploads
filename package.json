@@ -1,31 +1,29 @@
 {
-  "name": "skylark-widgets-filer",
-  "description": "The skylark filer  widget library",
+  "name": "skylark-widgets-uploads",
+  "description": "The skylark file upload  widget library",
   "version": "0.9.0",
   "keywords": [
     "skylark",
     "skylarkui",
-    "filer",
+    "uploads",
     "widget"
   ],
-  "homepage": "https://github.com/skylark-widgets/skylark-widgets-filer/",
+  "homepage": "https://github.com/skylark-widgets/skylark-widgets-uploads/",
   "author": "Hudaokeji, Inc.",
   "scripts": {
     "build": "sbundle build ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/skylark-widgets/skylark-widgets-filer.git"
+    "url": "https://github.com/skylark-widgets/skylark-widgets-uploads.git"
   },
   "bugs": {
-    "url": "https://github.com/skylark-widgets/skylark-widgets-filer/issues"
+    "url": "https://github.com/skylark-widgets/skylark-widgets-uploads/issues"
   },
   "license": "MIT",
   "dependencies": {
-    "skylark-data-collection": "git+https://github.com/skylark-data/skylark-data-collection.git#master",
-    "skylark-domx-files": "git+https://github.com/skylark-domx/skylark-domx-files.git#master",
     "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master",
-    "skylark-storages-diskfs": "git+https://github.com/skylark-storages/skylark-storages-diskfs.git#master",
+    "skylark-net-http": "git+https://github.com/skylark-net/skylark-net-http.git#master",
     "skylark-widgets-base": "git+https://github.com/skylark-widgets/skylark-widgets-base.git#master",
     "skylark-widgets-swt": "git+https://github.com/skylark-widgets/skylark-widgets-swt.git#master"
   },

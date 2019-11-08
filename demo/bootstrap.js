@@ -179,14 +179,14 @@ requirejs.config({
          },
          {
            name : "skylark-storages-diskfs" ,
-//           location : "../node_modules/skylark-storages-diskfs/dist/uncompressed/skylark-storages-diskfs",
-           location : "../../../storages/skylark-storages-diskfs/src",
+           location : "../node_modules/skylark-storages-diskfs/dist/uncompressed/skylark-storages-diskfs",
+//           location : "../../../storages/skylark-storages-diskfs/src",
             main: 'main'
          },
          {
            name : "skylark-domx-files" ,
-//           location : "../node_modules/skylark-domx-files/dist/uncompressed/skylark-domx-files",
-           location : "../../../domx/skylark-domx-files/src",
+           location : "../node_modules/skylark-domx-files/dist/uncompressed/skylark-domx-files",
+//           location : "../../../domx/skylark-domx-files/src",
             main: 'main'
          },
          {
@@ -196,16 +196,18 @@ requirejs.config({
           },
          {
            name : "skylark-widgets-base",
-           location : "../../skylark-widgets-base/src",
-            main: 'main'
+           location : "../node_modules/skylark-widgets-base/dist/uncompressed/skylark-widgets-base",
+//           location : "../../skylark-widgets-base/src",
+           main: 'main'
          },          
           {
             name: 'skylark-widgets-swt',
-            location : "../../skylark-widgets-swt/src",
+            location : "../node_modules/skylark-widgets-swt/dist/uncompressed/skylark-widgets-swt",
+//            location : "../../skylark-widgets-swt/src",
             main: 'main'
           },
           {
-            name: 'skylark-widgets-filer',
+            name: 'skylark-widgets-uploads',
             location : "../src",
             main: 'main'
           }                   
@@ -215,9 +217,9 @@ requirejs.config({
  
 // require(["module/name", ...], function(params){ ... });
 require(["skylark-domx-query"], function ($) {
-    require(["skylark-widgets-filer"], function (filer) {
+    require(["skylark-widgets-uploads"], function (uploads) {
         if (window.initPage) {
-            window.initPage($,filer);
+            window.initPage($,uploads);
         }
     });
 });

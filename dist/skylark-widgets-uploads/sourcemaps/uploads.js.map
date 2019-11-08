@@ -1,0 +1,1 @@
+{"version":3,"sources":["uploads.js"],"names":["define","skylark","attach"],"mappings":";;;;;;;AAAAA,QACE,yBACA,SAASC,GACV,OAAOA,EAAQC,OAAO","file":"../uploads.js","sourcesContent":["define([\r\n  \"skylark-langx/skylark\"\r\n],function(skylark){\r\n\treturn skylark.attach(\"widgets.updates\",{});\r\n});"]}

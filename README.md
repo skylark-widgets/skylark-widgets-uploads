@@ -1,2 +1,2 @@
-# skylark-ui-uploader
-The skylark file uploader ui library.
+# skylark-widgets-uploader
+The skylark file uploader widget library.

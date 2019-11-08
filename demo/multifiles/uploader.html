@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Backbone Upload Manager Sample</title>
+
+        <!-- Dependencies tyles -->
+       <link rel="stylesheet" href="../../node_modules/skylark-bootstrap3/themes/default/css/bootstrap.css">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="vendor/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <!-- Upload Manager style -->
+        <link href="../../skins/default/uploader.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div style="margin: 100px; width: 600px;" class="uploader" id="uploader1">
+            <h3 class="popover-title">Upload files</h3>
+            <div class="popover-content container-fluid file-list file-dropzone">
+                <div class="no-data"><em>Add files.</em></div>
+            </div>
+            <footer>
+                <button class="btn btn-warning pull-right btn-sm cancel-uploads"><i class="icon-cancel"></i>Cancel uploads</button>
+                <span class="btn btn-success btn-sm file-picker" id="fileinput-button">
+                    <i class="icon-plus"></i>
+                    <span>Add files...</span>
+                </span>
+                <button class="btn btn-primary btn-sm  start-uploads"><i class="icon-start"></i>Start uploads</button>
+            </footer>            
+        </div>
+        
+        <!-- Dependencies scripts -->
+
+        <!-- Upload Manager script -->
+        <!-- JavaScript Includes -->
+        <script type="text/javascript" src="../require.js" data-main="../bootstrap.js"></script>
+        <script>
+            var fileItemTemplate = '<div class="file-item row">' +
+                '   <div class="col-md-6"><span class="name"></span></div>' + 
+                '   <div class="col-md-3">' +
+                '    <span class="size"></span>' +
+                '    <div class="progress hidden">' +
+                '        <div class="progress-label"></div>' +
+                '        <div class="bar"></div>' +
+                '    </div>' +
+                '    <span class="message hidden"></span>' +
+                '   </div>' +
+                '   <div class="col-md-3">' +
+                '    <button class="btn btn-warning btn-xs cancel"><i class="icon-remove"></i>Cancel</button>' +
+                '    <button class="btn btn-xs clear hidden">Clear</button>' +
+                '   </div>' +
+                '</div>';
+
+            var initPage = function ($) {
+                $(function () {
+                  $('.uploader').plugin("lark.multiuploader",{
+                    uploadUrl: 'http://localhost:3001/upload/default',
+                    fileItem : {
+                      template : fileItemTemplate  
+                    } 
+                  }); 
+                }); 
+            };
+        </script>
+
+    </body>
+</html>
