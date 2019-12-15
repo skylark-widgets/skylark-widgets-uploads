@@ -27,7 +27,9 @@ JqueryFileUploadMiddleware.prototype.prepareOptions = function (options) {
         },
         accessControl: {
             allowOrigin: '*',
-            allowMethods: 'OPTIONS, HEAD, GET, POST, PUT, DELETE'
+            allowMethods: 'OPTIONS, HEAD, GET, POST, PUT, DELETE',
+            allowCredentials : true,
+            allowHeaders : "*"  //"Origin, X-Requested-With, Content-Type, Accept"
         }
     }, options);
 

@@ -3,7 +3,9 @@ module.exports = function (middleware, options) {
     return function (req, res, next) {
         res.set({
             'Access-Control-Allow-Origin': options.accessControl.allowOrigin,
-            'Access-Control-Allow-Methods': options.accessControl.allowMethods
+            'Access-Control-Allow-Methods': options.accessControl.allowMethods,
+            'Access-Control-Allow-Credentials': options.accessControl.allowCredentials,
+            'Access-Control-Allow-Headers': options.accessControl.allowHeaders
         });
         var UploadHandler = require('./uploadhandler')(options);
         var handler = new UploadHandler(req, res, function (result, redirect) {

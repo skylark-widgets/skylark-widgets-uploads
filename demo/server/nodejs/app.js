@@ -22,8 +22,6 @@ var dirs = require('./config').directors;
 // express setup
 var app = express();
 
-
-
 // set template engine
 app.engine('html', swig.renderFile);
 swig.setDefaults({
