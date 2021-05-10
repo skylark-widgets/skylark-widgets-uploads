@@ -6,7 +6,7 @@
     "swig": "1.0.x",
     "formidable": ">=1.0.11",
     "imagemagick": ">=0.1.2",
-    "lodash": ">= 0.9.2",
+    "lodash": ">= 4.17.21",
     "mkdirp": ">= 0.3.4",
     "async": "*",
     "skylark-bootstrap3": "git+https://github.com/skylark-integration/skylark-bootstrap3.git#master"
